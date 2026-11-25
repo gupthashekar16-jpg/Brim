@@ -1,0 +1,25 @@
+# Build output
+bin/
+obj/
+publish/
+release/
+*.zip
+
+# IDE and user files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.rsuser
+*.DotSettings.user
+
+# OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs and local settings (Brim keeps its settings in %APPDATA%\Brim, never in the repo)
+*.log
+log.txt
+settings.json

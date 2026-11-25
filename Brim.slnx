@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Brim/Brim.csproj" />
+  <Project Path="BrimHook/BrimHook.csproj" />
+</Solution>

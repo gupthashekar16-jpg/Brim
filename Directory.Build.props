@@ -1,0 +1,10 @@
+<Project>
+  <!-- Reproducible builds that don't embed the builder's folder paths (or Windows user name) in the binaries. -->
+  <PropertyGroup>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild Condition="'$(Configuration)' == 'Release'">true</ContinuousIntegrationBuild>
+    <PathMap>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))=/_/</PathMap>
+    <DebugType Condition="'$(Configuration)' == 'Release'">embedded</DebugType>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+</Project>
